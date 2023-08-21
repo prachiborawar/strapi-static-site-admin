@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "singularName": "person",
+    "pluralName": "people",
+    "displayName": "person",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "Avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Username": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Address": {
+      "type": "richtext",
+      "required": true
+    },
+    "Zip": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1000"
+    }
+  }
+}
